@@ -11,7 +11,7 @@ function onClick(e) {
   }
 
   // setup URL
-  let url = "http://numberapi.com/" + number + "/" + "type" + "?json";
+  const url = "http://numberapi.com/" + number + "/" + type + "?json";
   // call API
   fetch(url)
     .then(function(response) {
@@ -29,7 +29,7 @@ function onClick(e) {
 }
 
 function updateResult(info) {
-  document.getElementById('results').textContent = info;
+  document.getElementById('resultgest ').textContent = info;
 }
 
 document.getElementById('woo').addEventListener('click', onClick);
